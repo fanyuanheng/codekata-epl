@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+RAKEFILE="$(pwd)/rakefile.rb"
+
 function setup_rvm() {
   if [ ! -d "$HOME/.rvm" ]; then
     echo "installing rvm..."
