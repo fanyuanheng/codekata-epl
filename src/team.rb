@@ -8,6 +8,6 @@ class Team
   end
 
   def goal_difference
-    goal_scored.to_i - goal_conceded.to_i
+    (goal_scored.to_i - goal_conceded.to_i).abs
   end
 end
